@@ -1,5 +1,5 @@
 # DEZSYS_GK772_MARATHON_MOM
-Join GIT repository:
+Join GIT repository: [https://classroom.github.com/a/uWVIm5sG](https://classroom.github.com/a/uWVIm5sG)
 
 ## Einführung
 
@@ -72,19 +72,16 @@ Demo 2 beinhaltet eine Implementierung, die eine Umsetzung von JMS mit Springboo
 ## 1.5 Bewertung  
 
 *   Gruppengrösse: 1 Person
-*   Abgabemodus: per Protokoll, bei EK kann ein Abgabegespraech erforderlich sein
+*   Abgabemodus: per Protokoll und Abnahmegespraech
 *   Anforderungen **"überwiegend erfüllt"**
-    *   Implementierung der Kommunikation zwischen **EINER** Zeitstation und dem Parkrechner (JMS Queue)  
-    *   Ausgabe der empfangenen Daten am Parkrechner (Konsole oder Log-Datei)
-    *   Beantwortung der Fragestellungen   
-*   Anforderungen **"zur Gänze erfüllt"**
-    *   Temporaeres Speichern der Daten am Parkrechner zur Laufzeit (neue Datensaetze sollten immer angefuegt werden)
-    *   Zusammensetzung der Daten aller Timing Stations in eine zentrale JSON/XML-Struktur
+    *   Implementierung der Kommunikation zwischen 2 Zeitstation und dem Parkrechner (JMS Queue)   
+    *   Zusammensetzung der Daten der beiden Timing Stations in eine zentrale JSON/XML-Struktur
     *   Implementierung der REST Schnittstelle am Parkrechner
-*  Erweiterte Anforderungen **überwiegend erfüllt**
-    *   Implementierung der Kommunikation mit **MEHREREN** Timing Stations und dem Parkrechner
+    *   Temporaeres Speichern der Daten am Parkrechner zur Laufzeit (neue Datensaetze sollten immer angefuegt werden), Daten bleiben nach Abruf der REST Schnittstelle erhalten
+    *   Beantwortung der Fragestellungen  
+*   Anforderungen **"zur Gänze erfüllt"**
+    *   Implementierung der Kommunikation mit mind. 4 Timing Stations und dem Parkrechner
     *   Logging der Daten bei allen Zeitmessungsanlagen und dem Parkrechner   
-*  Erweiterte Anforderungen **zur Gänze erfüllt**
     *   Rückmeldung des Ergebnisses der Übertragung vom Parkrechner an die Timing Station (JMS Topic)  
 
 ## 1.6 Fragestellung für Protokoll
@@ -102,13 +99,13 @@ Demo 2 beinhaltet eine Implementierung, die eine Umsetzung von JMS mit Springboo
 *   Middleware:  
   [Apache ActiveMQ Installationspaket](http://activemq.apache.org/components/classic/download/)  
 *   Apache ActiveMQ & JMS Tutorial:   
-  http://activemq.apache.org/components/classic/documentation  
-  https://spring.io/guides/gs/messaging-jms/  
-  https://medium.com/@mailshine/activemq-getting-started-with-springboot-a0c3c960356e   
-  http://www.academictutorials.com/jms/jms-introduction.asp   
-  http://docs.oracle.com/javaee/1.4/tutorial/doc/JMS.html#wp84181    
-  https://www.oracle.com/java/technologies/java-message-service.html   
-  http://www.oracle.com/technetwork/articles/java/introjms-1577110.html  
-  https://spring.io/guides/gs/messaging-jms  
-  https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-messaging.html  
-  https://dzone.com/articles/using-jms-in-spring-boot-1  
+*  http://activemq.apache.org/components/classic/documentation  
+*  https://spring.io/guides/gs/messaging-jms/  
+*  https://medium.com/@mailshine/activemq-getting-started-with-springboot-a0c3c960356e   
+*  http://www.academictutorials.com/jms/jms-introduction.asp   
+*  http://docs.oracle.com/javaee/1.4/tutorial/doc/JMS.html#wp84181    
+*  https://www.oracle.com/java/technologies/java-message-service.html   
+*  http://www.oracle.com/technetwork/articles/java/introjms-1577110.html  
+*  https://spring.io/guides/gs/messaging-jms  
+*  https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-messaging.html  
+*  https://dzone.com/articles/using-jms-in-spring-boot-1 
